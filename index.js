@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URL, () => {
 app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
-
+// asdasdasd
 // ROUTES
 app.use('/v1/auth', authRoute);
 app.use('/v1/user', userRoute);
