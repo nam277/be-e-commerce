@@ -51,6 +51,7 @@ const authController = {
 
     // LOGIN
     loginUser: async (req, res) => {
+        console.log({ res });
         try {
             const user = await User.findOne({ username: req.body.username });
             if (!user) {
